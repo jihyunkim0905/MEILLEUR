@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 마우스커서  */
+html {
+    cursor: url(./mouse/mouse.png), auto;
+}
+
+a {
+    cursor: url(./mouse/mouse.png), pointer;
+}
+
+
+/* 
+영문폰트(cinzel-dafont)
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Noto Sans KR', sans-serif;  
+
+(aboreto)
+font-family: 'Aboreto', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Nanum Myeongjo', serif;
+
+한글폰트(스포카 한 산스 네오-눈누)
+font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;*/
+
+/* 스포카 한 산스 네오 폰트 */
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 15px;
+    line-height: 25px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-align: none;
+    color: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+/* header */
+#header {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(40, 35, 22, 1) 0%, rgba(63, 59, 40, 0.47) 53%, rgba(249, 249, 249, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+.header_inner {
+    /* margin: 0 auto;*/
+    min-width: 1320px;
+    position: relative;
+}
+
+.header_inner h1 {
+    /*position: absolute;*/
+    color: white;
+    /*top: 50px;*/
+    /*left: 100px;*/
+    float: left;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.header_inner .gnb {
+    /*position: absolute;*/
+    color: white;
+    /*top: 65px;*/
+    /*left: 500px;*/
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    padding: 53px 60px;
+
+}
+
+.header_inner .gnb li {
+    float: left;
+    padding-right: 50px;
+}
+
+.header_inner .login li {
+    float: left;
+    padding-right: 20px;
+}
+
+.header_inner .login {
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    color: white;
+    font-size: 15px;
+    /* font-weight: bold; */
+
+}
+
+/* hover  */
+.view {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.view:hover {
+    transition: all 0.5s;
+    color: #c9e7ec;
+}
+
+
+/* card */
+.card img {
+    max-width: 100%;
+}
+
+.card .swiper-slide h1 {
+    padding: 10px 0;
+}
+
+.card .swiper-slide p {
+    padding-bottom: 30px;
+}
+
+
+/* offer */
+#specialoffer {
+    background-color: #fdfaf4;
+    height: 770px;
+    width: 100%;
+}
+
+#offer {
+    width: 1320px;
+    margin: 0px auto;
+    position: relative;
+
+}
+
+#offer>h1 {
+    font-size: 40px;
+    font-family: 'Cinzel Decorative', cursive;
+    padding-top: 200px;
+    font-weight: bold;
+    text-align: center;
+    color: #463a3a;
+}
+
+.card {
+    padding: 160px 0;
+    /*가운데 이미지의 높이에 따라 아래 위 패딩 조정해주세요!*/
+}
+
+
+.swiper-button-prev {
+    left: -50px;
+    right: auto;
+}
+
+.swiper-button-next {
+    right: -50px;
+    left: auto;
+}
+
+/*높이가 다른 슬라이드들을 세로 가운데가 맞게 해줌*/
+.card .swiper-wrapper {
+    align-items: center;
+}
+
+/*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. */
+.card .swiper-slide {
+    background-color: #fff;
+    transform: scale(0.5);
+    flex-shrink: 0;
+
+}
+
+.card .swiper-slide-prev {
+    transform: scale(1.5);
+    z-index: 5;
+}
+
+.card .swiper-slide-next {
+    transform: scale(1.5);
+    z-index: 5;
+}
+
+.card .swiper-slide-active {
+    transform: scale(2);
+    z-index: 10;
+
+    transition: all 0.3s;
+
+}
+
+
+
+/*불릿모양. swiper-pagination-bullet-active 클래스가 현재 색상이 들어간 부분 나타냄*/
+.card .swiper-pagination-bullet-active {
+    width: 30px;
+    border-radius: 4px;
+
+}
+
+.card .swiper-pagination span {
+    background-color: #463a3a;
+
+}
+
+
+/* dining */
+#content {
+    color: #fff;
+    background-color: #191921;
+    height: 2500px;
+    font-size: 25px;
+}
+
+.content_inner {
+    margin: 0 auto;
+    width: 1320px;
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+.dining .img {
+    float: left;
+}
+
+.lounge .text {
+    float: left;
+    padding: 110px;
+    padding-top: 168px;
+    line-height: 35px;
+
+}
+
+.dining .text {
+    float: left;
+    padding: 110px;
+    line-height: 35px;
+}
+
+.text h2 {
+    color: #d0b090;
+    font-family: 'Aboreto', cursive;
+    font-size: 60px;
+    padding-bottom: 150px;
+}
+
+.content_inner .view {
+    padding-top: 115px;
+    font-size: 20px;
+}
+
+.lounge .img {
+    float: left;
+}
+
+.lounge .text {
+    float: left;
+}
+
+.cafe .text {
+    float: left;
+    padding-top: 150px;
+    padding-left: 50px;
+    line-height: 35px;
+
+}
+
+.cafe {
+    margin-top: 90px;
+    height: 750px;
+    position: relative;
+
+}
+
+.cafe .img {
+    position: absolute;
+    top: 100px;
+    right: 60px;
+}
+
+/*footer*/
+#footer {
+    background-color: #2c2a29;
+    color: #ccc;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.footer_logo {
+    float: left;
+}
+
+.footer_text {
+    float: left;
+    margin-left: 50px;
+    padding-top: 33px;
+}
+
+.footer_icon {
+    float: left;
+
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+.footer_icon img {
+    padding-right: 10px;
+}
+
+.footer_text ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.footer_text ul li a {
+    color: #fff;
+    /*a태그에 글씨색을 준 이유는 구분하는 선의 색상은 바꾸지 않기 위해서 이다.*/
+}
+
+.footer_text p {
+    padding-top: 20px;
+}

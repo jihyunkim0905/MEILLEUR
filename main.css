@@ -1,0 +1,728 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 마우스커서  */
+html {
+    cursor: url(./mouse/mouse.png), auto;
+}
+
+a {
+    cursor: url(./mouse/mouse.png), pointer;
+}
+
+/* 
+영문폰트(cinzel-dafont)
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Noto Sans KR', sans-serif;  
+
+(aboreto)
+font-family: 'Aboreto', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Nanum Myeongjo', serif;
+
+한글폰트(스포카 한 산스 네오-눈누)
+font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;*/
+
+/* 스포카 한 산스 네오 폰트 */
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 15px;
+    line-height: 25px;
+    color: black;
+    min-width: 1450px;
+    background-color: #fdfaf4;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-align: none;
+    color: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+
+}
+
+/* header */
+#header {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(40, 35, 22, 1) 0%, rgba(63, 59, 40, 0.47) 53%, rgba(249, 249, 249, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+.header_inner {
+    /* margin: 0 auto;*/
+    min-width: 1320px;
+    position: relative;
+}
+
+.header_inner h1 {
+    /*position: absolute;*/
+    color: white;
+    /*top: 50px;*/
+    /*left: 100px;*/
+    float: left;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.header_inner .gnb {
+    /*position: absolute;*/
+    color: white;
+    /*top: 65px;*/
+    /*left: 500px;*/
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    padding: 53px 60px;
+
+}
+
+.header_inner .gnb li {
+    float: left;
+    padding-right: 50px;
+}
+
+.header_inner .login li {
+    float: left;
+    padding-right: 20px;
+}
+
+.header_inner .login {
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    color: white;
+    font-size: 15px;
+    /* font-weight: bold; */
+
+}
+
+#video video {
+    width: 100%;
+}
+
+.main_logo {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.mainbanner {
+    position: relative;
+}
+
+/*팝업창 css*/
+.popup {
+    position: relative;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    /*팝업창 모양이 완벽히 끝나고 나면 display:none속성으로 처음에 안보이게까지만 css로 설정한다.*/
+}
+
+.close {
+    position: absolute;
+    bottom: 4px;
+
+}
+
+.po1 {
+    bottom: 5px;
+    left: 20px;
+}
+
+.po2 {
+
+    right: 20px;
+}
+
+/* date */
+.date {
+    width: 1320px;
+    background: #fff;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    height: 80px;
+    transform: translateX(-50%);
+    z-index: 30;
+    display: flex;
+    align-items: center;
+}
+
+.datebox {
+    width: 940px;
+    height: 80px;
+}
+
+.reservation {
+    width: 180px;
+    color: white;
+    background-color: #6e665c;
+    padding: 27.5px 0;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.search {
+    width: 200px;
+    color: white;
+    background-color: #6e665c;
+    padding: 27.5px 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.search:hover {
+
+    transition: all 0.5s;
+    background-color: #c9ad90;
+}
+
+.datebox {
+    display: flex;
+    align-items: center;
+}
+
+.datebox li:nth-child(1) {
+    width: 33%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.datebox li:nth-child(2) {
+    width: 43%;
+    padding: 0px 60px;
+    box-sizing: border-box;
+}
+
+.datebox li:nth-child(3) {
+    width: 20%;
+    text-align: center;
+}
+
+.datebox li:nth-child(4) {
+    width: 20%;
+    text-align: center;
+}
+
+.datebox li:nth-child(5) {
+    width: 16%;
+    text-align: center;
+}
+
+
+#cal2 {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-weight: bold;
+}
+
+#num {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-weight: bold;
+}
+
+.dateroom {
+    text-align: center;
+}
+
+/* room */
+#room {
+    margin: 0 auto;
+    background-image: url(./main/room_background.png);
+    background-position: center;
+    height: 950px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* rotateimg  */
+.rotateimg {
+    animation: rotation 10s linear infinite;
+    position: absolute;
+    top: 66px;
+    left: -100px;
+    z-index: 50;
+}
+
+.roomslide {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 170px;
+
+}
+
+.rotate {
+    margin: 0 auto;
+    width: 1320px;
+    position: relative;
+
+}
+
+.roomslide_img {
+    float: left;
+    width: 1035px;
+    height: 690px;
+
+}
+
+.roomslide_text {
+    padding-left: 40px;
+    float: left;
+    margin-top: 15px;
+}
+
+.roomslide_text p {
+    margin-top: 30px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: black;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.roomslide_text h4 {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    color: #463a3a;
+    padding-top: 40px;
+}
+
+
+.roomslide .swiper-button-next:after {
+    content: url(./room/roombutton.png);
+
+}
+
+.roomslide .swiper-button-prev:after {
+    content: url(./room/roombuttonleft.png);
+
+}
+
+.roomslide .swiper-button-next {
+    right: 70px;
+    top: 540px;
+}
+
+.roomslide .swiper-button-prev {
+    left: 1085px;
+    top: 540px;
+}
+
+
+/* offer */
+#offer {
+    margin: 0 auto;
+    max-width: 1700px;
+    height: 845px;
+    text-align: center;
+}
+
+#offer>h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: #463a3a;
+}
+
+.offertext>h2 {
+    font-family: 'Aboreto', cursive;
+    color: black;
+    font-size: 26px;
+    padding: 35px 0;
+}
+
+.offertext {
+    font-size: 16px;
+}
+
+.offertext ul {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.offertext ul li {
+    float: left;
+    padding-left: 30px;
+}
+
+.more {
+    padding-bottom: 10px;
+    background-color: #d7e8ea;
+    padding: 3px 12px;
+    display: inline-block;
+    border-radius: 20px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.more:hover {
+    transition: all 0.5s;
+    background-color: #f4e5d5;
+}
+
+.offer .offerimg {
+    width: 100%;
+}
+
+
+.offer .swiper-slide {
+    padding: 5px;
+    /* border: 1px solid #ccc; */
+    box-sizing: border-box;
+}
+
+.offer .swiper-slide .more {
+    position: absolute;
+    top: 480px;
+    left: 214px;
+
+}
+
+.offer {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.offer .swiper-button-prev {
+    left: -50px;
+    right: auto;
+}
+
+.offer .swiper-button-next {
+    right: -50px;
+    left: auto;
+}
+
+/*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. 슬라이드가 3개일때 앞뒤로는 swiper-slide-prev, swiper-slide-next 클래스가 부여되는 이를 활용. slide개수가 4개 이상이면 모양이 제대로 잡히지 않으므로, 3개 이하일때 사용할것.*/
+.offer .swiper-slide {
+    transform: scale(0.9);
+
+}
+
+.offer .swiper-slide-active {
+    transform: scale(1);
+
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+}
+
+/* dining */
+#wrapper {
+
+    position: relative;
+}
+
+.tab_content {
+    height: 950px;
+    background-position: center;
+}
+
+#DINING {
+    background-image: url(./dining/dining2.png);
+}
+
+#MEILLEURCAFE {
+    background-image: url(./dining/cafe2.png);
+}
+
+#LOUNGEBAR {
+    background-image: url(./dining/lounge3.png);
+}
+
+.tabs li.active {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    /* 클릭하면 유지됌 */
+}
+
+.tabs {
+    position: absolute;
+    left: 50%;
+    top: 280px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.tabs li {
+    padding: 28px;
+}
+
+.dining {
+    transform: translateX(-50px);
+}
+
+.cafe {
+    transform: translateX(-180px);
+}
+
+.lounge {
+    transform: translateX(-80px);
+}
+
+/* attatchment */
+#attach {
+    width: 100%;
+    height: 450px;
+    background-image: url(./attach/attach7.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.attach {
+    text-align: center;
+    padding-top: 210px;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #3f3a34;
+    font-size: 40px;
+}
+
+/* faci */
+#contents {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+#contents h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    margin-top: 150px;
+    padding-left: 30px;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.faci {
+
+    color: #6c480b;
+    font-size: 20px;
+    font-family: 'Aboreto', cursive;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    display: inline-block;
+}
+
+/* kensington common main page style */
+.mainpage .main_visual .mainviewcont.main_visual_fixed {
+    position: relative;
+    padding-top: 41.7%;
+    overflow: hidden;
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual_view {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual_view .viewbg_wrap {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-size: cover;
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual_view .viewbg_wrap .viewbg {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0;
+    transition: opacity .1s ease, transform 5s ease 1s;
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual_view .viewbg_wrap.hover {
+    z-index: 1;
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual_view .viewbg_wrap.hover .viewbg {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    table-layout: fixed;
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual a {
+    position: relative;
+    display: table-cell;
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual a .text_wrap {
+    position: absolute;
+    top: 11%;
+    left: 45px;
+    right: 70px;
+    display: block;
+    font-family: 'SpoqaHanSansNeo-Bold';
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual a .text_wrap .title {
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 35px;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 0
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual a .text_wrap .desc {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual a.on {
+    background: rgba(0, 0, 0, 0);
+}
+
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual a.off {
+    background: none;
+}
+
+.mainpage .main_visual .mainviewcont.main_visual_fixed .visual a.off .text_wrap {
+    opacity: 0;
+}
+
+.hide {
+    opacity: 0.5;
+}
+
+
+
+/*footer*/
+#footer {
+    background-color: #2c2a29;
+    color: #ccc;
+    margin-top: 100px;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.footer_logo {
+    float: left;
+}
+
+.footer_text {
+    float: left;
+    margin-left: 50px;
+    padding-top: 33px;
+}
+
+.footer_icon {
+    float: left;
+
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+.footer_icon img {
+    padding-right: 10px;
+}
+
+.footer_text ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.footer_text ul li a {
+    color: #fff;
+    /*a태그에 글씨색을 준 이유는 구분하는 선의 색상은 바꾸지 않기 위해서 이다.*/
+}
+
+.footer_text p {
+    padding-top: 20px;
+}

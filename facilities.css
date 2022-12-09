@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 마우스커서  */
+html {
+    cursor: url(./mouse/mouse.png), auto;
+}
+
+a {
+    cursor: url(./mouse/mouse.png), pointer;
+}
+
+/* 
+영문폰트(cinzel-dafont)
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Noto Sans KR', sans-serif;  
+
+(aboreto)
+font-family: 'Aboreto', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Nanum Myeongjo', serif;
+
+한글폰트(스포카 한 산스 네오-눈누)
+font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;*/
+
+/* 스포카 한 산스 네오 폰트 */
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 15px;
+    line-height: 25px;
+    color: #463a3a;
+    background-image: url(./background.png);
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-align: none;
+    color: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+/* header */
+#header {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(40, 35, 22, 1) 0%, rgba(63, 59, 40, 0.47) 53%, rgba(249, 249, 249, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+.header_inner {
+    /* margin: 0 auto;*/
+    min-width: 1320px;
+    position: relative;
+}
+
+.header_inner h1 {
+    /*position: absolute;*/
+    color: white;
+    /*top: 50px;*/
+    /*left: 100px;*/
+    float: left;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.header_inner .gnb {
+    /*position: absolute;*/
+    color: white;
+    /*top: 65px;*/
+    /*left: 500px;*/
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    padding: 53px 60px;
+
+}
+
+.header_inner .gnb li {
+    float: left;
+    padding-right: 50px;
+}
+
+.header_inner .login li {
+    float: left;
+    padding-right: 20px;
+}
+
+.header_inner .login {
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    color: white;
+    font-size: 15px;
+    /* font-weight: bold; */
+
+}
+
+
+
+/* #content */
+#content {
+    background-image: url(./faci2/background.png);
+    background-repeat: no-repeat;
+}
+
+.content_inner {
+    margin: 0 auto;
+    width: 1110px;
+}
+
+.content_inner .h2 {
+    font-size: 40px;
+    color: #463a3a;
+    font-family: 'Cinzel Decorative', cursive;
+    padding-bottom: 50px;
+    text-decoration: underline;
+
+}
+
+.poolimg {
+    text-align: right;
+    position: relative;
+}
+
+.pool2 {
+    position: absolute;
+    top: 30px;
+    left: -10px;
+}
+
+.pool>.h2 {
+    padding-top: 170px;
+}
+
+.wedding>h2 {
+    padding-top: 150px;
+    text-align: right;
+}
+
+.yoga>h2 {
+    padding-top: 150px;
+}
+
+.weddingimg {
+    text-align: left;
+    position: relative;
+}
+
+.wedding2 {
+    position: absolute;
+    top: 60px;
+    right: -15px;
+}
+
+.weddingh2 {
+    font-size: 40px;
+    color: #463a3a;
+    font-family: 'Cinzel Decorative', cursive;
+    padding-bottom: 50px;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.text {
+    padding: 30px 0;
+    text-align: right;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.yogatext {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.weddingtext {
+    padding: 30px 0;
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.more {
+    margin-top: 15px;
+    padding-bottom: 10px;
+    background-color: #d7e8ea;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    color: black;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.more:hover {
+    transition: all 0.5s;
+    background-color: #f4e5d5;
+    font-weight: bold;
+}
+
+.weddingbox {
+    text-align: right;
+}
+
+.weddingmore {
+    padding-bottom: 10px;
+    background-color: #d7e8ea;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    color: black;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.weddingmore:hover {
+    transition: all 0.5s;
+    background-color: #f4e5d5;
+    font-weight: bold;
+}
+
+.yoga {
+    margin-bottom: 100px;
+}
+
+
+/*footer*/
+#footer {
+    background-color: #2c2a29;
+    color: #ccc;
+
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.footer_logo {
+    float: left;
+}
+
+.footer_text {
+    float: left;
+    margin-left: 50px;
+    padding-top: 33px;
+}
+
+.footer_icon {
+    float: left;
+
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+.footer_icon img {
+    padding-right: 10px;
+}
+
+.footer_text ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.footer_text ul li a {
+    color: #fff;
+    /*a태그에 글씨색을 준 이유는 구분하는 선의 색상은 바꾸지 않기 위해서 이다.*/
+}
+
+.footer_text p {
+    padding-top: 20px;
+}

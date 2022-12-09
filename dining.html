@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dining</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./main/favicon1.png">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- cinzel 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <!-- aboreto 폰트  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <!--내가 만든 css파일이 가장 밑에 오게끔 해주세요!-->
+    <link rel="stylesheet" href="./dining.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="header_inner clearfix">
+            <ul class="login ">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">예약 확인 </a></li>
+            </ul>
+            <h1> <a href="#"><img src="./main/header_logo4.png" alt=" 헤더로고"></a></h1>
+            <ul class="gnb">
+
+                <li><a href="#">ROOMS</a></li>
+                <li><a href="#">DINING</a></li>
+                <li><a href="#">FACILITIES</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div> <!-- header_inner  -->
+    </div>
+    <!-- header  -->
+
+
+
+    <div id="specialoffer">
+        <div id="offer">
+            <!--마진오토-->
+            <h1>SPECIal OFFEr</h1>
+            <div class="swiper card">
+                <!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+                <div class="swiper-wrapper">
+                    <!--swiper-wrapper는 필수 클래스-->
+                    <div class="swiper-slide">
+                        <!--swiper-slide는 필수 클래스-->
+                        <img src="./sub2_offer/bridal.jpg" alt="메인배너1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./sub2_offer/cat.jpg" alt="메인배너2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./sub2_offer/happy.jpg" alt="메인배너3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./sub2_offer/kids.jpg" alt="메인배너4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./sub2_offer/strawberry.jpg" alt="메인배너5">
+                    </div>
+
+                </div>
+
+                <!-- 도트를 추가하고 싶을때-->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!--mb E-->
+
+            <!-- 화살표추가
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+        </div>
+    </div>
+    <!--offer-->
+
+
+
+    <!-- dining -->
+    <div id="content">
+        <div class="content_inner">
+            <div class="dining clearfix">
+                <div class="img">
+                    <img src="./sub2_dining/dining.png" alt="다이닝">
+                </div>
+                <div class="text">
+                    <h2>DINING</h2>
+                    <p>탁 트인 전면 통창에서 수석 chef들이 <br>
+                        선보이는 MEILLEUR DINING을 경험해보세요. </p>
+                    <p class="view"> <a href="#"> VIEW MORE→</a></p>
+                </div>
+            </div>
+            <!-- dining  -->
+
+            <div class="cafe">
+                <div class="text">
+                    <h2>MEILLEUR CAFE</h2>
+                    <p>호텔 바리스타와 베이커리 셰프의 <br>
+                        특별한 커피를 즐길 수 있는 <br>
+                        "MEILLEUR CAFE" </p>
+                    <p class="view"> <a href="#"> VIEW MORE→</a></p>
+                </div>
+                <div class="img">
+                    <img src="./sub2_dining/cafe.png" alt="카페">
+                </div>
+            </div>
+            <!-- cafe  -->
+
+            <div class="lounge clearfix">
+                <div class="img">
+                    <img src="./sub2_dining/lounge.png" alt="라운지">
+                </div>
+                <div class="text">
+                    <h2>LOUNGE BAR</h2>
+                    <p>제주의 자연이 주는 소중한 재료와 함께하는 <br>
+                        가장 제주다운 프리미엄 라운지 바 </p>
+                    <p class="view"> <a href="#"> VIEW MORE→</a></p>
+                </div>
+            </div>
+            <!-- lounge  -->
+        </div>
+    </div>
+    <!-- content  -->
+
+
+    <!-- footer -->
+    <div id="footer">
+        <!--배경색-->
+        <div class="footer_inner clearfix">
+            <!--가운데정렬-->
+            <h1 class="footer_logo">
+                <a href="#"><img src="./footer/footerlogo.png" alt="푸터로고"></a>
+            </h1>
+            <div class="footer_text">
+                <ul class="clearfix">
+                    <li><a href="#">고객센터</a></li>
+                    <li>ㅣ</li>
+                    <li><a href="#">이용약관</a></li>
+                    <li>ㅣ</li>
+                    <li><a href="#"> <b>개인정보처리방침</b></a></li>
+                    <li>ㅣ</li>
+                    <li><a href="#">이메일 무단수집금지</a></li>
+                </ul>
+                <p>
+                    제주특별자치도 서귀포시 중문관광로 88번길 55 &nbsp;&nbsp; 대표이사 김지현 &nbsp;&nbsp; T.053-777-8954 <br>
+                    사업자등록번호 585-4425-556444 &nbsp; &nbsp; 통신판매신고번호 중구 52598호 <br>
+                    Copyright @ 2022 MEILLEUR HOTEL JEJU Co. All rights reserved.
+                </p>
+            </div>
+
+            <div class="footer_icon">
+                <a href="#"><img src="./footer/facebook.png" alt="페이스북"></a>
+                <a href="#"><img src="./footer/instagram.png" alt="페이스북"></a>
+                <a href="#"><img src="./footer/youtube.png" alt="페이스북"></a>
+            </div>
+            <!--footer_text-->
+        </div>
+        <!--footer_inner-->
+    </div>
+
+
+    <!-- Initialize Swiper -->
+    <!--옵션부분 pdf파일 참조해주세요-->
+    <script>
+
+
+        var swiper = new Swiper(".card", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },//화살표를 작동하게 하는 옵션.
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },//도트부분을 작동하게 하는 옵션.
+            /*autoplay: {
+                  delay: 1000,*/
+            /*이미지가 자동으로 넘어가는 시간설정. 1000 = 1초*/
+            /*disableOnInteraction: false,
+        },*/
+            speed: 500,
+            loop: true,
+            slidesPerView: 4,
+            centeredSlides: true,
+            spaceBetween: 0,
+        });//지우면 안되요!
+
+    </script>
+</body>
+
+</html>
