@@ -135,6 +135,10 @@ iframe {
 
 
 /* #content */
+.wedding {
+    padding: 50px 0;
+}
+
 #content {
     background-image: url(./faci2/background.png);
     background-repeat: no-repeat;

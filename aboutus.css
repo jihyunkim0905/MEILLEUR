@@ -299,6 +299,20 @@ iframe {
 }
 
 /* brandcolor */
+@keyframes upanddown {
+    from {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.colorchip {
+    animation: upanddown 1s linear infinite alternate;
+}
+
 #color {
     margin: 0 auto;
     width: 1320px;
@@ -327,7 +341,7 @@ iframe {
 }
 
 .symbol_inner {
-    margin: 00px auto;
+    margin: 0 auto;
     width: 1320px;
     padding: 130px 0;
 
