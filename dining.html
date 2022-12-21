@@ -22,6 +22,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Nanum+Myeongjo:wght@400;700;800&display=swap"
         rel="stylesheet">
+    <!-- 데이타 에오스  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--내가 만든 css파일이 가장 밑에 오게끔 해주세요!-->
     <link rel="stylesheet" href="./dining.css">
 </head>
@@ -52,7 +55,8 @@
     <div id="specialoffer">
         <div id="offer">
             <!--마진오토-->
-            <h1>SPECIal OFFEr</h1>
+            <h1 data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="800" data-aos-delay="100">SPECIal
+                OFFEr</h1>
             <div class="swiper card">
                 <!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
                 <div class="swiper-wrapper">
@@ -94,41 +98,56 @@
     <div id="content">
         <div class="content_inner">
             <div class="dining clearfix">
-                <div class="img">
+                <div data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="800" data-aos-delay="300"
+                    class="img">
                     <img src="./sub2_dining/dining.png" alt="다이닝">
                 </div>
                 <div class="text">
-                    <h2>DINING</h2>
-                    <p>탁 트인 전면 통창에서 수석 chef들이 <br>
-                        선보이는 MEILLEUR DINING을 경험해보세요. </p>
-                    <p class="view"> <a href="#"> VIEW MORE→</a></p>
+                    <h2 data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="800" data-aos-delay="100">
+                        DINING</h2>
+                    <div data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="800"
+                        data-aos-delay="300">
+                        <p>탁 트인 전면 통창에서 수석 chef들이 <br>
+                            선보이는 MEILLEUR DINING을 경험해보세요. </p>
+                        <p class="view"> <a href="#"> VIEW MORE→</a></p>
+                    </div>
                 </div>
             </div>
             <!-- dining  -->
 
             <div class="cafe">
                 <div class="text">
-                    <h2>MEILLEUR CAFE</h2>
-                    <p>호텔 바리스타와 베이커리 셰프의 <br>
-                        특별한 커피를 즐길 수 있는 <br>
-                        "MEILLEUR CAFE" </p>
-                    <p class="view"> <a href="#"> VIEW MORE→</a></p>
+                    <h2 data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="800" data-aos-delay="100">
+                        MEILLEUR CAFE</h2>
+                    <div data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="800"
+                        data-aos-delay="300">
+                        <p>호텔 바리스타와 베이커리 셰프의 <br>
+                            특별한 커피를 즐길 수 있는 <br>
+                            "MEILLEUR CAFE" </p>
+                        <p class="view"> <a href="#"> VIEW MORE→</a></p>
+                    </div>
                 </div>
-                <div class="img">
+                <div data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="800" data-aos-delay="300"
+                    class="img">
                     <img src="./sub2_dining/cafe.png" alt="카페">
                 </div>
             </div>
             <!-- cafe  -->
 
             <div class="lounge clearfix">
-                <div class="img">
+                <div data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="800" data-aos-delay="300"
+                    class="img">
                     <img src="./sub2_dining/lounge.png" alt="라운지">
                 </div>
                 <div class="text">
-                    <h2>LOUNGE BAR</h2>
-                    <p>제주의 자연이 주는 소중한 재료와 함께하는 <br>
-                        가장 제주다운 프리미엄 라운지 바 </p>
-                    <p class="view"> <a href="#"> VIEW MORE→</a></p>
+                    <h2 data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="800" data-aos-delay="100">
+                        LOUNGE BAR</h2>
+                    <div data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="800"
+                        data-aos-delay="300">
+                        <p>제주의 자연이 주는 소중한 재료와 함께하는 <br>
+                            가장 제주다운 프리미엄 라운지 바 </p>
+                        <p class="view"> <a href="#"> VIEW MORE→</a></p>
+                    </div>
                 </div>
             </div>
             <!-- lounge  -->
@@ -199,6 +218,9 @@
             spaceBetween: 0,
         });//지우면 안되요!
 
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
