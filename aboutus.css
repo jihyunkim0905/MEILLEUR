@@ -85,6 +85,11 @@ iframe {
 
 }
 
+.gnb li a:hover {
+    transition: all 0.5s;
+    color: #c9ad90;
+}
+
 .header_inner {
     /* margin: 0 auto;*/
     min-width: 1320px;
@@ -140,6 +145,7 @@ iframe {
     background-image: url(./aboutus/attachment2.png);
     background-position: center top;
     background-repeat: no-repeat;
+    background-size: contain;
     background-attachment: fixed;
 }
 

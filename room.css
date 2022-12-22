@@ -136,6 +136,7 @@ iframe {
 #pro {
     background-image: url(./room/room_promotion.png);
     background-repeat: no-repeat;
+    background-size: cover;
     min-height: 950px;
     text-align: center;
     font-size: 18px;

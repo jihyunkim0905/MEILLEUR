@@ -85,6 +85,11 @@ iframe {
 
 }
 
+.gnb li a:hover {
+    transition: all 0.5s;
+    color: #c9ad90;
+}
+
 .header_inner {
     /* margin: 0 auto;*/
     min-width: 1320px;
@@ -234,7 +239,7 @@ iframe {
 }
 
 .datebox li:nth-child(2) {
-    width: 43%;
+    width: 35%;
     padding: 0px 60px;
     box-sizing: border-box;
 }
@@ -261,6 +266,7 @@ iframe {
     font-size: 18px;
     font-family: 'SpoqaHanSansNeo-Regular';
     font-weight: bold;
+    width: 500px;
 }
 
 #num {
@@ -280,7 +286,8 @@ iframe {
     margin: 0 auto;
     background-image: url(./main/room_background.png);
     background-position: center;
-    height: 950px;
+    background-size: cover;
+    height: 1000px;
     position: relative;
     overflow: hidden;
 }
@@ -379,7 +386,7 @@ iframe {
 
 #offer>h2 {
     font-family: 'Cinzel Decorative', cursive;
-    margin-top: 100px;
+    margin-top: 60px;
     text-align: center;
     font-size: 40px;
     color: #463a3a;
@@ -527,6 +534,7 @@ iframe {
     height: 450px;
     background-image: url(./attach/attach7.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
 
